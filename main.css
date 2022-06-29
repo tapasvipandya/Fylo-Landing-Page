@@ -9,6 +9,8 @@
   --secondaryFont: "Raleway", sans-serif;
   --primaryFont: "Open Sans", sans-serif;
   --primaryColour: hsl(243, 87%, 12%);
+  --buttonColour: hsl(224, 93%, 58%);
+  --lightGray: hsl(0, 0%, 75%);
 }
 
 /* General Styling */
@@ -42,4 +44,76 @@ body {
   font-family: var(--secondaryFont);
   color: var(--primaryColour);
   font-weight: 400;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 86px;
+  width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+.hero__left {
+}
+
+.text__title {
+  font-size: 40px;
+  line-height: 60px;
+  font-family: var(--secondaryFont);
+  font-weight: 700;
+  color: var(--primaryColour);
+  width: 627px;
+}
+
+.text__desc {
+  font-size: 17px;
+  font-family: var(--primaryFont);
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--primaryColour);
+  margin-top: 15px;
+  width: 585px;
+  letter-spacing: 0.531px;
+}
+
+.hero__right img {
+  width: 640px;
+  height: 474px;
+}
+
+.cta {
+  display: flex;
+  justify-content: space-between;
+  width: 536px;
+  margin-top: 25px;
+}
+
+.cta__textbox input {
+  width: 320px;
+  height: 42px;
+  padding: 0;
+}
+
+.cta__textbox input::placeholder {
+  font-family: var(--primaryFont);
+  font-weight: 400;
+  padding-left: 21px;
+  color: var(--lightGray);
+}
+
+.cta__button button {
+  width: 200px;
+  height: 45px;
+  background: var(--buttonColour);
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
+  border-radius: 3.125px;
+  color: #ffffff;
+  font-family: var(--secondaryFont);
+  font-weight: 700;
+  font-size: 14px;
+  border: none;
+  margin-left: 20px;
 }
